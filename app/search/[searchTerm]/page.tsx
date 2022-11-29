@@ -1,6 +1,13 @@
 import React from "react";
 
-const SearchResult = () => {
+type PageProps = {
+    params: {
+        searchTerm: string;
+    };
+};
+
+const SearchResult = async ({ params: { searchTerm } }: PageProps) => {
+    const searchResults = await search(searchTerm);
     return <div>SearchResult</div>;
 };
 
