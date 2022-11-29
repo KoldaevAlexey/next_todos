@@ -12,8 +12,8 @@ export default function RootLayout({
             </div>
             <div className="flex-1 pl-5">
                 <Search />
+                <div>{children}</div>
             </div>
-            <div>{children}</div>
         </main>
     );
 }
